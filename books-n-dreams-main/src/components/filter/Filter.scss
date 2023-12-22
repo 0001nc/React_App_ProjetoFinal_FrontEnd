@@ -1,0 +1,21 @@
+.Filter {
+  width: 17%;
+  color: #8d8d8d;
+  margin-top: 8%;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+  }
+
+  .separator {
+    border: 1px solid #e3e3e3;
+  }
+
+  @media(max-width: 768px) {
+    width: 70%;
+    margin: 2rem auto;
+  }
+}

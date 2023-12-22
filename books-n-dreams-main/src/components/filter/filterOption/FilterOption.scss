@@ -1,0 +1,79 @@
+.FilterOption {
+
+  .filterDisplay {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: #8d8d8d;
+    margin-top: 5%;
+    padding-left: 15px;
+
+    &:hover {
+      color: $orange;
+      cursor: pointer;
+    }
+  }
+
+  .filterText {
+    font-size: 1.1rem;
+  }
+
+  .optionDisplay {
+    padding-left: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  .radioButton {
+    input {
+      height: 1rem;
+      aspect-ratio: 1 / 1;
+      border-radius: 10px;
+      margin: 0;
+      border: 1px solid #8d8d8d;
+      appearance: none;
+
+      &:checked {
+        accent-color: $orange;
+        background-color: $orange;
+        border: 1px solid $orange;
+      }
+
+      &:hover {
+        border: 1px solid $orange;
+        cursor: pointer;
+      }
+    }
+
+    .checkboxSmaller {
+      height: 0.8rem;
+      aspect-ratio: 1 / 1;
+      margin-right: 10px;
+    }
+  }
+
+  .dropdown {
+    overflow: auto;
+    transition: max-height 0.3s ease-in-out;
+    margin-left: 10px;
+
+    @media(max-width: 768px) {
+      max-height: 10rem;
+    }
+  }
+
+  *::-webkit-scrollbar {
+    width: 2px;
+  }
+  *::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    border: 3px solid #8d8d8d;
+  }
+}

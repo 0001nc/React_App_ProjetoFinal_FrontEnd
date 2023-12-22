@@ -1,0 +1,34 @@
+.register-form {
+  .message {
+    text-align: center;
+    font-size: 15px;
+    &.success {
+      color: green;
+    }
+    &.error {
+      color: $orange;
+    }
+  }
+  .page.hidden {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    * {
+      height: 0;
+      width: 0;
+    }
+  }
+  .group {
+    display: flex;
+    .flex-1 {
+      flex: 1;
+    }
+    .c-45 {
+      width: 45%;
+    }
+    .left {
+      margin-right: 5px;
+    }
+  }
+
+}

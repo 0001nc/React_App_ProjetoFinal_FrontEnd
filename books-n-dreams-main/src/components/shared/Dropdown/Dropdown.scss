@@ -1,0 +1,22 @@
+.Dropdown {
+  font-size: 15px;
+  label {
+    display: block;
+    font-weight: bold;
+    margin-top: 7px;
+    margin-bottom: 3px;
+    color: #705D56;
+  }
+  select {
+    background-color: #fff;
+    padding: 15px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    &.unselected {
+      //color: #9d9c9c;
+    }
+  }
+}
