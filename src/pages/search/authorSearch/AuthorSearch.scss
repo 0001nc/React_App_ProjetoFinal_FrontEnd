@@ -1,0 +1,49 @@
+.AuthorSearch {
+  text-decoration: none;
+
+  .contentDisplay {
+    display: flex;
+
+    .Filter {
+      height: 100vh;
+      position: sticky;
+      left: 0;
+      top: 40px;
+
+      @media(max-width: 768px) {
+        position: revert;
+        height: fit-content;
+      }
+    }
+
+    @media(max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  .search {
+    flex: 1;
+
+    .container {
+      margin: 0 10%;
+
+      h1 {
+        font-size: $titleSize;
+        color: $brown;
+        width: 100%;
+      }
+
+      h2 {
+        font-size: $paragraphSize;
+        color: $brown;
+      }
+
+      .noResult {
+        font-size: $paragraphSizeAPP;
+        font-family: $paragraphFont;
+        color: $brown;
+        margin-top: 15px;
+      }
+    }
+  }
+}
